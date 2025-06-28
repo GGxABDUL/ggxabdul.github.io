@@ -1,0 +1,127 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Oi", serif;
+  font-weight: 50;
+  font-size: 50px;
+  color: #fff;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+h5 {
+  font-family: "Iceland", serif;
+  font-weight: 50;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 1vh;
+  margin-bottom: 0.2em;
+}
+
+h6 {
+  font-family: "Iceland", serif;
+  font-weight: 20;
+  font-size: 50px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 2vh;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.social-links img {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.social-links img:hover {
+  transform: scale(1.15) rotate(-6deg);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.16);
+}
+.bio-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.link-bio-btn,
+.link-bio-btn2 {
+  width: 310px;
+  max-width: 90vw;
+  background: #fff;
+  color: #111;
+  font-family: "Iceland", "Oi", Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 18px 0;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.12s;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link-bio-btn:hover,
+.link-bio-btn:focus,
+.link-bio-btn2:hover,
+.link-bio-btn2:focus {
+  background: #f3f3f3;
+  color: #000;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 1.3rem;
+  }
+  .social-links img {
+    width: 38px;
+    height: 38px;
+    padding: 5px;
+  }
+  .bio-links {
+    gap: 12px;
+  }
+  .link-bio-btn,
+  .link-bio-btn2 {
+    width: 95vw;
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
+}
